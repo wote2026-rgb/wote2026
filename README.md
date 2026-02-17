@@ -2,7 +2,7 @@
     <img src="/Frontend//public/logo-quickride-green.png" height="100px" >
 </div>
 
-# QuickRide - Full Stack Ride Booking Application
+# QuickRide - The full Stack Ride Booking Application
 
 QuickRide is a feature-rich project built using modern web technologies. It replicates the core features and functionalities of the existing ride booking platforms, including **user authentication**, **ride booking**, **real-time location tracking**, **fare calculation** and **real-time communication**. The application features a clean and responsive user interface, ensuring an intuitive user experience. Designed as a learning and portfolio project, it showcases skills in **frontend and backend development, API integration, and real-time features**.
 
