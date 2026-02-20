@@ -27,13 +27,14 @@ function CaptainProtectedWrapper({ children }) {
       })
       .then((response) => {
         if (response.status === 200) {
-          const captain = response.data.captain;
-          setCaptain(captain);
+          const fetchedCaptain = response.data.captain;
+          setCaptain(fetchedCaptain);
           localStorage.setItem(
             "userData",
-            JSON.stringify({ type: "captain", data: captain, }));
+            JSON.stringify({ type: "captain", data: fetchedCaptain })
+          );
+          setIsVerified(fetchedCaptain.emailVerified);
         }
-        setIsVerified(captain.emailVerified)
       })
       .catch((err) => {
         localStorage.removeItem("token");

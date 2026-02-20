@@ -1,3 +1,4 @@
+global.SlowBuffer = Buffer;
 require("dotenv").config();
 const socket = require("./socket");
 const express = require("express");

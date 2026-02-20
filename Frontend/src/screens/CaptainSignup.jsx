@@ -32,7 +32,7 @@ function CaptainSignup() {
         color: data.color,
         number: data.number,
         capacity: data.capacity,
-        type: data.type,
+        type: data.type.toLowerCase(),
       },
     };
     Console.log(captainData);
@@ -45,6 +45,10 @@ function CaptainSignup() {
       );
       Console.log(response);
       localStorage.setItem("token", response.data.token);
+      localStorage.setItem("userData", JSON.stringify({
+        type: "captain",
+        data: response.data.captain,
+      }));
       navigation("/captain/home");
     } catch (error) {
       setResponseError(
